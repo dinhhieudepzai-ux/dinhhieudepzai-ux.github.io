@@ -659,7 +659,6 @@
                 .then(data => { footerIp.textContent = data.ip; })
                 .catch(() => { footerIp.textContent = 'Không thể xác định'; });
         }
-
         const ua = navigator.userAgent;
         let device = "Không rõ";
         if (/Windows/i.test(ua)) device = "Windows";
@@ -678,4 +677,3 @@
         if(footerBrowser) footerBrowser.textContent = browser;
 
     })();
-
